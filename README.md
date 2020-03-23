@@ -1,4 +1,4 @@
-# Boilerplate with Truffle and webpack for dApps built on Ethereum
+# Etherium Voting App
 
 This boilerplate was made for this [blog post](https://medium.freecodecamp.org/developing-an-ethereum-decentralized-voting-application-a99de24992d9).
 ### Dependencies:
@@ -9,9 +9,17 @@ This boilerplate was made for this [blog post](https://medium.freecodecamp.org/d
 ## Setup
 ```
 npm install -g truffle
-git clone https://github.com/tko22/truffle-webpack-boilerplate.git
-cd truffle-webpack-boilerplate
-npm install
-npm run dev
+git clone https://github.com/tapegram/voter.git
+cd voter
+yarn install
+yarn run dev
 ```
+
+Note that this project uses Yarn 2.
+
+
+## TODO
+1) Switch to a React/Typscript front end.
+2) Create a backend API behind graphql.
+3) Deploy it on AWS!
 

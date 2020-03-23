@@ -20,7 +20,7 @@ module.exports = {
         use: [ 'style-loader', 'css-loader' ]
       }
     ],
-    loaders: [
+    rules: [
       { test: /\.json$/, use: 'json-loader' },
       {
         test: /\.js$/,
