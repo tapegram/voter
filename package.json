@@ -1,44 +1,8 @@
 {
-  "name": "ethereum-voting-dapp",
-  "version": "1.0.0",
-  "description": "",
-  "main": "truffle.js",
-  "directories": {
-    "test": "test"
-  },
+  "name": "voter",
   "scripts": {
-    "dev": "webpack-dev-server",
+    "truffle": "yarn dlx truffle",
     "client": "cd client && yarn run",
-    "build": "webpack",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "MIT",
-  "devDependencies": {
-    "@types/prettier": "1.19.1",
-    "babel-loader": "^8.1.0",
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-env": "^1.7.0",
-    "copy-webpack-plugin": "^4.3.1",
-    "css-loader": "^0.28.8",
-    "eslint-plugin-import": "^2.8.0",
-    "json-loader": "^0.5.7",
-    "lite-server": "^2.3.0",
-    "pnp-webpack-plugin": "^1.6.4",
-    "style-loader": "^0.19.1",
-    "truffle-contract": "^3.0.1",
-    "web3": "^0.20.1",
-    "webpack": "^4.42.0",
-    "webpack-dev-server": "^3.10.3"
-  },
-  "dependencies": {
-    "@babel/core": "^7.9.0",
-    "@babel/plugin-transform-runtime": "^7.9.0",
-    "@babel/preset-env": "^7.9.0",
-    "babel": "^6.23.0",
-    "eslint": "^6.8.0",
-    "file-loader": "^6.0.0",
-    "prettier": "^2.0.2",
-    "webpack-cli": "^3.3.11"
+    "test": "echo 'no tests'"
   }
 }
