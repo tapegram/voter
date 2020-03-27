@@ -1,7 +1,6 @@
 {
   "name": "voter",
   "scripts": {
-    "truffle": "yarn dlx truffle",
     "client": "cd client && yarn run",
     "test": "echo 'no tests'"
   }
