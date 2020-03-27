@@ -2,6 +2,10 @@
   "name": "voter",
   "scripts": {
     "client": "cd client && yarn run",
-    "test": "echo 'no tests'"
+    "test": "echo 'no tests'",
+    "post-merge": "yarn && cd client && yarn && echo 'post-merge update'"
+  },
+  "dependencies": {
+    "husky": "^4.2.3"
   }
 }
