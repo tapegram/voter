@@ -1071,6 +1071,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/prettier@npm:1.19.1":
+  version: 1.19.1
+  resolution: "@types/prettier@npm:1.19.1"
+  checksum: 2/394a4364ce5e3364bd230eaeed16cfa816b686bb05fc71968188f6a29b1f69abc235ccd4fd0aef4c4eec124480a6e3420962e99406e2bf2f552c9aae46073546
+  languageName: node
+  linkType: hard
+
 "@webassemblyjs/ast@npm:1.8.5":
   version: 1.8.5
   resolution: "@webassemblyjs/ast@npm:1.8.5"
@@ -4379,6 +4386,7 @@ __metadata:
     "@babel/core": ^7.9.0
     "@babel/plugin-transform-runtime": ^7.9.0
     "@babel/preset-env": ^7.9.0
+    "@types/prettier": 1.19.1
     babel: ^6.23.0
     babel-loader: ^8.1.0
     babel-plugin-transform-runtime: ^6.23.0
@@ -4391,6 +4399,7 @@ __metadata:
     json-loader: ^0.5.7
     lite-server: ^2.3.0
     pnp-webpack-plugin: ^1.6.4
+    prettier: ^2.0.2
     style-loader: ^0.19.1
     truffle-contract: ^3.0.1
     web3: ^0.20.1
@@ -8220,6 +8229,15 @@ fsevents@^1.2.7:
   version: 1.0.4
   resolution: "prepend-http@npm:1.0.4"
   checksum: 2/f723f34a23394b568a9ff0cd502bdda244b343c03b12a259343566eab1184cf41a6c7e9975d9e6010ccb2901b7c428d296e56a67a72d0a6ecb0f13531a3fa44e
+  languageName: node
+  linkType: hard
+
+"prettier@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "prettier@npm:2.0.2"
+  bin:
+    prettier: bin-prettier.js
+  checksum: 2/a00d6e8c454b6f9965702dd932094370a8ed7ff475ffbbf80e0203f390d63714863190666edb7daae25648f0f62e41e12bf7f3a2493781c71ac921f6de650705
   languageName: node
   linkType: hard
 

@@ -42,6 +42,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "virtual:b767fcbc73d046920399ddc97b1836ca04d508d7eac0b153ebdc7968422c02346de3190d42fce4d66bbba650359c7c997ca0c22ffd999ac4f5b064f32b737f50#npm:7.9.0"
       ],
       [
+        "@types/prettier",
+        "npm:1.19.1"
+      ],
+      [
         "babel",
         "npm:6.23.0"
       ],
@@ -90,6 +94,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "npm:1.6.4"
       ],
       [
+        "prettier",
+        "npm:2.0.2"
+      ],
+      [
         "style-loader",
         "npm:0.19.1"
       ],
@@ -124,6 +132,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/core", "npm:7.9.0"],
             ["@babel/plugin-transform-runtime", "virtual:b767fcbc73d046920399ddc97b1836ca04d508d7eac0b153ebdc7968422c02346de3190d42fce4d66bbba650359c7c997ca0c22ffd999ac4f5b064f32b737f50#npm:7.9.0"],
             ["@babel/preset-env", "virtual:b767fcbc73d046920399ddc97b1836ca04d508d7eac0b153ebdc7968422c02346de3190d42fce4d66bbba650359c7c997ca0c22ffd999ac4f5b064f32b737f50#npm:7.9.0"],
+            ["@types/prettier", "npm:1.19.1"],
             ["babel", "npm:6.23.0"],
             ["babel-loader", "virtual:b767fcbc73d046920399ddc97b1836ca04d508d7eac0b153ebdc7968422c02346de3190d42fce4d66bbba650359c7c997ca0c22ffd999ac4f5b064f32b737f50#npm:8.1.0"],
             ["babel-plugin-transform-runtime", "npm:6.23.0"],
@@ -136,6 +145,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["json-loader", "npm:0.5.7"],
             ["lite-server", "npm:2.5.4"],
             ["pnp-webpack-plugin", "npm:1.6.4"],
+            ["prettier", "npm:2.0.2"],
             ["style-loader", "npm:0.19.1"],
             ["truffle-contract", "npm:3.0.8"],
             ["web3", "npm:0.20.7"],
@@ -1411,6 +1421,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-node-npm-13.9.3-8fb3245332-2.zip/node_modules/@types/node/",
           "packageDependencies": [
             ["@types/node", "npm:13.9.3"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@types/prettier", [
+        ["npm:1.19.1", {
+          "packageLocation": "./.yarn/cache/@types-prettier-npm-1.19.1-396f22bcd2-2.zip/node_modules/@types/prettier/",
+          "packageDependencies": [
+            ["@types/prettier", "npm:1.19.1"]
           ],
           "linkType": "HARD",
         }]
@@ -5118,6 +5137,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/core", "npm:7.9.0"],
             ["@babel/plugin-transform-runtime", "virtual:b767fcbc73d046920399ddc97b1836ca04d508d7eac0b153ebdc7968422c02346de3190d42fce4d66bbba650359c7c997ca0c22ffd999ac4f5b064f32b737f50#npm:7.9.0"],
             ["@babel/preset-env", "virtual:b767fcbc73d046920399ddc97b1836ca04d508d7eac0b153ebdc7968422c02346de3190d42fce4d66bbba650359c7c997ca0c22ffd999ac4f5b064f32b737f50#npm:7.9.0"],
+            ["@types/prettier", "npm:1.19.1"],
             ["babel", "npm:6.23.0"],
             ["babel-loader", "virtual:b767fcbc73d046920399ddc97b1836ca04d508d7eac0b153ebdc7968422c02346de3190d42fce4d66bbba650359c7c997ca0c22ffd999ac4f5b064f32b737f50#npm:8.1.0"],
             ["babel-plugin-transform-runtime", "npm:6.23.0"],
@@ -5130,6 +5150,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["json-loader", "npm:0.5.7"],
             ["lite-server", "npm:2.5.4"],
             ["pnp-webpack-plugin", "npm:1.6.4"],
+            ["prettier", "npm:2.0.2"],
             ["style-loader", "npm:0.19.1"],
             ["truffle-contract", "npm:3.0.8"],
             ["web3", "npm:0.20.7"],
@@ -9367,6 +9388,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/prepend-http-npm-1.0.4-cd78a41247-2.zip/node_modules/prepend-http/",
           "packageDependencies": [
             ["prepend-http", "npm:1.0.4"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["prettier", [
+        ["npm:2.0.2", {
+          "packageLocation": "./.yarn/cache/prettier-npm-2.0.2-662859f303-2.zip/node_modules/prettier/",
+          "packageDependencies": [
+            ["prettier", "npm:2.0.2"]
           ],
           "linkType": "HARD",
         }]
