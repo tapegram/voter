@@ -4,9 +4,7 @@ import './index.css';
 import * as serviceWorker from './serviceWorker';
 import App from './App';
 import { Drizzle } from '@drizzle/store';
-// import MyStringStore from './contracts/MyStringStore.json';
-
-const MyStringStore = require('./contracts/MyStringStore.json');
+import { MyStringStore } from "./json";
 
 // let drizzle know what contracts we want and how to access our test blockchain
 const options = {
@@ -19,12 +17,13 @@ const options = {
     },
 };
 
-// setup drizzle
-const drizzle = new Drizzle(options);
+const props = {
+    drizzle: new Drizzle(options),
+};
 
 ReactDOM.render(
     <React.StrictMode>
-        <App drizzle={{ drizzle }}/>
+        <App { ...props }/>
     </React.StrictMode>,
     document.getElementById('root')
 );
