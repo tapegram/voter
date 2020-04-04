@@ -3,10 +3,11 @@ import "./App.css";
 import { Drizzle } from "@drizzle/store";
 
 type Props = {
-  drizzle: Drizzle;
+  drizzle: any;
 };
 
 const App: React.FC<Props> = ({ drizzle }) => {
+  console.log(drizzle);
   const [loading, setLoading] = React.useState(true);
   const [drizzleState, setDrizzleState] = React.useState(null);
 
