@@ -41,7 +41,7 @@ class App extends React.Component<Props> {
     }
 
     componentWillUnmount() {
-        this.unsubscribe();
+        this.state.unsubscribe();
     }
 
     render() {
