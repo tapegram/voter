@@ -1,13 +1,9 @@
 import React from 'react';
 import './App.css';
-import {Drizzle, Store} from "@drizzle/store";
+import {Drizzle} from "@drizzle/store";
 
 type Props = {
     drizzle: Drizzle,
-};
-
-interface TDrizzle extends Drizzle {
-    store: Store,
 };
 
 type State = {
