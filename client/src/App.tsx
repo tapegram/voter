@@ -1,53 +1,35 @@
-import React from 'react';
-import './App.css';
-import {Drizzle} from "@drizzle/store";
+import React from "react";
+import "./App.css";
+import { Drizzle } from "@drizzle/store";
 
 type Props = {
-    drizzle: Drizzle,
+  drizzle: Drizzle;
 };
 
-type State = {
-    loading: boolean,
-    drizzle: Drizzle,
-    unsubscribe: Function,
-}
+const App: React.FC<Props> = ({ drizzle }) => {
+  const [loading, setLoading] = React.useState(true);
+  const [drizzleState, setDrizzleState] = React.useState(null);
 
-class App extends React.Component<Props> {
-    state: State;
-    constructor(props: Props) {
-        super(props);
-        this.state = {
-            loading: true,
-            unsubscribe: () => ({}),
-            drizzle: props.drizzle,
-        };
-    }
+  React.useEffect(() => {
+    const unsubscribe = drizzle.store.subscribe(() => {
+      // every time the store updates, grab the state from drizzle
+      const drizzleState = drizzle.store.getState();
 
-    componentDidMount() {
-        const { drizzle } = this.state;
+      // check to see if it's ready, if so, update local component state
+      if (drizzleState.drizzleStatus.initialized) {
+        setLoading(false);
+        setDrizzleState(drizzleState);
+      }
+    });
 
-        // subscribe to changes in the store
-        this.setState({
-            unsubscribe: drizzle.store.subscribe(() => {
-                // every time the store updates, grab the state from drizzle
-                const drizzleState = drizzle.store.getState();
+    return unsubscribe;
+  });
 
-                // check to see if it's ready, if so, update local component state
-                if (drizzleState.drizzleStatus.initialized) {
-                    this.setState({ loading: false, drizzleState });
-                }
-            })
-        })
-    }
+  console.log(drizzleState);
 
-    componentWillUnmount() {
-        this.state.unsubscribe();
-    }
+  if (loading) return "Loading Drizzle...";
 
-    render() {
-        if (this.state.loading) return "Loading Drizzle...";
-        return <div className="App">Drizzle is ready</div>;
-    }
-}
+  return <div className="App">Drizzle is ready</div>;
+};
 
 export default App;
