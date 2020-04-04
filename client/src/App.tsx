@@ -27,7 +27,7 @@ const App: React.FC<Props> = ({ drizzle }) => {
 
   console.log(drizzleState);
 
-  if (loading) return "Loading Drizzle...";
+  if (loading) return <>"Loading Drizzle..."</>;
 
   return <div className="App">Drizzle is ready</div>;
 };
